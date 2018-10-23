@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.view.View
 import android.widget.TextView
-import com.test.thirdpartyloging.enums.EnumsType
 
 class ThirdPartyLoginActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -25,6 +24,7 @@ class ThirdPartyLoginActivity : AppCompatActivity(), View.OnClickListener {
 
         mToolbarTitleLeft = findViewById(R.id.toolbar_title_left)
         mCenterTitleTxt = findViewById(R.id.center_title_txt)
+        mToolbarTitleLeft!!.setOnClickListener(this)
 
         if (!TextUtils.isEmpty(mType)) {
             if (mType!!.equals("umeng")) {
@@ -36,7 +36,7 @@ class ThirdPartyLoginActivity : AppCompatActivity(), View.OnClickListener {
             }
         }
 
-        mToolbarTitleLeft!!.setOnClickListener(this)
+
 
 
     }
