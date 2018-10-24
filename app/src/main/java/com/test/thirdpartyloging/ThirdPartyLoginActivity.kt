@@ -37,8 +37,6 @@ class ThirdPartyLoginActivity : AppCompatActivity(), View.OnClickListener {
         }
 
 
-
-
     }
 
 
