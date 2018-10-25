@@ -2,6 +2,7 @@ package com.test.thirdpartyloging;
 
 import android.app.Application;
 
+import com.umeng.commonsdk.UMConfigure;
 import com.umeng.socialize.PlatformConfig;
 
 /**
@@ -13,6 +14,7 @@ public class TestApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        UMConfigure.setLogEnabled(true);
     }
 
     {
